@@ -1,0 +1,34 @@
+[
+    {
+        "Ciudad": "Buenos Aires",
+        "Temperatura_C": 30.7,
+        "Sensacion_Termica_C": 31.95,
+        "Humedad_Porcentaje": 49,
+        "Viento_Velocidad_m/s": 3.09,
+        "Descripcion_Clima": "Muy nuboso"
+    },
+    {
+        "Ciudad": "Tokio",
+        "Temperatura_C": 6.19,
+        "Sensacion_Termica_C": 4.25,
+        "Humedad_Porcentaje": 54,
+        "Viento_Velocidad_m/s": 2.57,
+        "Descripcion_Clima": "Cielo claro"
+    },
+    {
+        "Ciudad": "Londres",
+        "Temperatura_C": 10.73,
+        "Sensacion_Termica_C": 10.08,
+        "Humedad_Porcentaje": 85,
+        "Viento_Velocidad_m/s": 5.14,
+        "Descripcion_Clima": "Muy nuboso"
+    },
+    {
+        "Ciudad": "Rio de Janeiro",
+        "Temperatura_C": 28.46,
+        "Sensacion_Termica_C": 31.43,
+        "Humedad_Porcentaje": 69,
+        "Viento_Velocidad_m/s": 6.69,
+        "Descripcion_Clima": "Algo de nubes"
+    }
+]
