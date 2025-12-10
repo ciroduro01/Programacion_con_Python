@@ -40,7 +40,7 @@ Prueba realizada con N = 10000 elementos.
 ------------------------------------------------
 ```
 
-  * **Confirmación de $O(N^2)$:** Para grandes valores de $N$ (ej. 10.000 a 20.000), los tiempos de ejecución serán notables (varios segundos), verificando empíricamente que ambos algoritmos pertenecen a la misma clase de complejidad ($O(N^2)$).
+  * **Confirmación de $O(N^2)$:** Para grandes valores de $N$ (ej. 10.000 a 20.000), los tiempos de ejecución serán notables (varios segundos), verificando empíricamente que ambos algoritmos pertenecen a la misma clase de complejidad (O(N^2)).
   * **Eficiencia Relativa:** Generalmente, la **Inserción** suele ser ligeramente más rápida que **Burbuja** para listas aleatorias, lo cual se refleja en el reporte.
 
 -----
