@@ -1,0 +1,38 @@
+# ===============================================
+# .gitignore CONSOLIDADO PARA PORTAFOLIO PYTHON
+# ===============================================
+
+# 1. ENTORNO VIRTUAL
+# Es lo más importante a ignorar.
+venv/
+.venv/
+env/
+*~
+
+# 2. ARCHIVOS TEMPORALES Y DE COMPILACIÓN DE PYTHON
+__pycache__/
+*.pyc
+*.o
+*.pyd
+*.so
+
+# 3. BASES DE DATOS Y PERSISTENCIA (Proyectos SQL, Flask, Django)
+# Bases de datos SQLite y archivos de persistencia JSON/pickle.
+*.sqlite3
+*.db
+*.json 
+
+# 4. ARCHIVOS GENERADOS POR FRAMEWORKS WEB (Django, Flask)
+# Django: Ignora la base de datos, carpetas estáticas/media y migraciones temporales.
+/media/
+/static/
+*/migrations/  # Ignora las carpetas 'migrations' dentro de cualquier app
+
+# 5. ARCHIVOS DE CONFIGURACIÓN Y SECRETOS (Claves API)
+# ¡Importante para proyectos con APIs!
+config.py
+*.env
+
+# 6. ARCHIVOS DE ANALISIS DE DATOS
+# Archivos de salida grandes o que no son código fuente.
+reporte_consolidado.csv
