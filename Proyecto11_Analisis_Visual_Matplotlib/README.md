@@ -36,13 +36,13 @@ El resultado del proyecto son dos gráficos exportados que permiten una rápida 
 
   * **Propósito:** Comparación de magnitudes.
   * **Funcionalidad Destacada:** Demuestra el uso de `plt.bar()` y la adición de etiquetas de datos (`plt.text`) directamente sobre cada barra para una lectura precisa.
-  ![Gráfico de Barras de Ventas por Sucursal](assets/Ventas_Totales_por_Sucursal.png)
+    ![Gráfico de Barras de Ventas por Sucursal](assets/Ventas_Totales_por_Sucursal.jpg)
 
 ### Gráfico 2: Distribución de Productos (Circular)
 
   * **Propósito:** Mostrar proporciones de un total.
   * **Funcionalidad Destacada:** Demuestra el uso de la función `autopct='%1.1f%%'` para mostrar los porcentajes dentro de las "rebanadas" y el parámetro `explode` para resaltar el producto más vendido, mejorando el impacto visual.
-  ![Gráfico Circular de Distribución de Productos](assets/Participación_Porcentual_por_Producto.png)
+    ![Gráfico Circular de Distribución de Productos](assets/Participación_Porcentual_por_Producto.jpg)
 
 -----
 
