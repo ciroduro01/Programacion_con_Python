@@ -1,0 +1,7 @@
+Python es un lenguaje de programación muy popular. ¡Es fácil de leer y escribir!
+
+Mucha gente usa Python para análisis de datos, desarrollo web y automatización.
+El proyecto de hoy es analizar este texto.
+¿Cuántas veces aparece la palabra "Python"? ¿Y la palabra "la"?
+El análisis de datos con Python es fascinante.
+Este proyecto es el primero de nuestro portafolio.
