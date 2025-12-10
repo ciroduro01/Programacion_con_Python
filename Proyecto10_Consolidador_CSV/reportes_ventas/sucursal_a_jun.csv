@@ -1,0 +1,4 @@
+ID_Venta,Producto,Cantidad,Monto_Unitario,Fecha,Sucursal
+101,Mouse Inalámbrico,5,15.50,2025-06-01,A
+102,Teclado Mecánico,2,75.00,2025-06-03,A
+103,Monitor Curvo,1,180.99,2025-06-05,A
