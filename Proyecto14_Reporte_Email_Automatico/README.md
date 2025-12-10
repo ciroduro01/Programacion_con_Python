@@ -38,12 +38,13 @@ El *script* está dividido en tres componentes lógicos claros:
 
 ## 4. Estructura del Repositorio y Archivos
 
+```
 Programacion_con_Python/
 └── Proyecto14_Reporte_Email_Automatico/
     ├── reporte_automatico_email.py  <-- Lógica principal (Envío)
     ├── config.py                    <-- Credenciales SMTP (IGNORADO POR GIT)
     └── README.md                    <-- Documentación del proyecto
-
+```
 ---
 
 ## 5. Conclusiones
