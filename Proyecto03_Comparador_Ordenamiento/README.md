@@ -4,7 +4,7 @@
 
 ## 1\. Objetivo y Resumen
 
-El objetivo principal de este proyecto es **medir y comparar el rendimiento en tiempo real** de algoritmos de ordenamiento de complejidad cuadrática ($O(N^2)$), como **Bubble Sort** y **Insertion Sort**.
+El objetivo principal de este proyecto es **medir y comparar el rendimiento en tiempo real** de algoritmos de ordenamiento de complejidad cuadrática (O(N^2)), como **Bubble Sort** y **Insertion Sort**.
 
 La aplicación genera grandes listas de números aleatorios y cronometra el tiempo exacto que le toma a cada algoritmo ordenar la misma lista, permitiendo al usuario visualizar la diferencia de eficiencia.
 
