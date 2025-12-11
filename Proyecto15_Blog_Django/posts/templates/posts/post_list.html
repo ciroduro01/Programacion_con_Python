@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Blog de Proyectos de Python</title>
+</head>
+<body>
+    <h1>Mi Portafolio de Proyectos (Blog)</h1>
+    
+    {% for post in posts %}
+        <article>
+            <h2>
+                <a href="{% url 'posts:post_detail' pk=post.pk %}">{{ post.titulo }}</a>
+            </h2>
+            
+            <p style="color: #454; font-size: 0.9em;">
+                Publicado: {{ post.fecha_publicacion|date:"d M Y" }}
+            </p>
+            
+            <p>{{ post.contenido|truncatechars:200 }}</p>
+            <hr>
+        </article>
+    {% empty %}
+        <p>Aún no hay publicaciones en el blog.</p>
+    {% endfor %}
+
+    <p><a href="{% url 'admin:index' %}">Ir al Panel de Administración</a></p>
+</body>
+</html>

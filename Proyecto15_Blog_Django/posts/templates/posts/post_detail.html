@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.titulo }}</title>
+</head>
+<body>
+    
+    <h1>{{ post.titulo }}</h1>
+
+    <p style="color: #454; font-size: 0.9em;">
+        Publicado: {{ post.fecha_publicacion|date:"d M Y \a\ \h\:\i" }}
+    </p>
+
+    <div style="margin-top: 20px; line-height: 1.6;">
+        <p>{{ post.contenido|linebreaksbr }}</p>
+    </div>
+
+    <hr>
+    <p><a href="{% url 'posts:post_list' %}">← Volver al Listado de Proyectos</a></p>
+
+</body>
+</html>

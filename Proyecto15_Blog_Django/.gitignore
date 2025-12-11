@@ -1,0 +1,17 @@
+# .gitignore para Proyecto Django
+
+# Directorios y archivos generados automáticamente
+venv/
+__pycache__/
+*.pyc
+*.log
+*.sqlite3
+
+# Archivos específicos de Django
+db.sqlite3
+/media
+/static
+*.env
+
+# Archivos de Migraciones (Opcional: el usuario las recreará)
+/posts/migrations/
