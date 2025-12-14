@@ -27,7 +27,7 @@ Este proyecto se basa completamente en librerías integradas de Python, lo que l
 
 El *script* está dividido en tres componentes lógicos claros:
 
-1.  **Configuración Segura:** Las credenciales de email (`REMITENTE_EMAIL`, `REMITENTE_PASSWORD`) y los detalles del servidor SMTP se almacenan en el archivo **`config.py`**. Esto aísla los secretos del código principal, permitiendo que el desarrollador pueda añadir `config.py` al archivo **`.gitignore`** para **nunca subir sus credenciales a GitHub**.
+1.  **Configuración Segura:** Las credenciales de email (`REMITENTE_EMAIL`, `REMITENTE_PASSWORD`) y los detalles del servidor SMTP se almacenan en el archivo **`config.py`**.
 2.  **Construcción del Mensaje (`crear_mensaje`):** Utiliza la clase `MIMEMultipart` y contenido **HTML** para construir un correo profesional y formateado, no solo texto plano. Esto mejora la presentación del reporte.
 3.  **Lógica de Envío (`enviar_email`):**
     * Establece una conexión segura con `smtplib.SMTP` y `server.starttls()`.
