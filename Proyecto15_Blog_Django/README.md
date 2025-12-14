@@ -82,6 +82,6 @@ Este proyecto demuestra un dominio avanzado de:
 
   * **Estructura de Proyectos Avanzada:** Manejo del patrón MVT (Model-View-Template) y la estructura modular de Django (Proyecto vs. Aplicación).
   * **Desarrollo Full-Stack:** Capacidad para manejar desde la persistencia de datos (Modelos) hasta la presentación dinámica (Templates).
-  * **Preparación para Despliegue:** Inclusión de archivos WSGI/ASGI y configuración de rutas, mostrando entendimiento del ciclo de vida de una aplicación web profesional.
+  * **Preparación para Despliegue:** Inclusión de archivos WSGI/ASGI y configuración de rutas, mostrando entendimiento del ciclo de trabajo de una aplicación web profesional.
 
 -----
