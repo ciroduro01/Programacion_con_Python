@@ -21,7 +21,7 @@ Este proyecto utiliza módulos estándar de Python, lo que lo hace fácilmente e
 
 El programa proporciona una interfaz de línea de comandos (CLI) con funcionalidades CRUD, siendo su resultado clave la **creación y gestión persistente** del inventario.
 
-### 💾 Estructura y Visualización de `libreria.json`
+### Estructura y Visualización de `libreria.json` (Fragmento)
 
 El inventario completo se almacena como un **objeto JSON principal**, donde cada clave es el ISBN único de un libro y su valor es un objeto (diccionario) con los detalles.
 
@@ -38,8 +38,7 @@ El inventario completo se almacena como un **objeto JSON principal**, donde cada
         "autor": "Gabriel García Márquez",
         "año": 1967,
         "cantidad": 8
-    },
-    // ... más libros
+    }
 }
 ```
 
