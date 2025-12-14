@@ -4,7 +4,7 @@
 
 ## 1\. Objetivo y Resumen
 
-El objetivo de este proyecto es tomar conjuntos de datos (simulados o previamente limpiados) y transformarlos en **representaciones visuales** claras y efectivas. El proyecto se centra en la implementación y personalización de gráficos utilizando la biblioteca **Matplotlib**, el estándar de facto en Python para la creación de gráficos estáticos.
+El objetivo de este proyecto es tomar conjuntos de datos y transformarlos en **representaciones visuales** claras y efectivas. El proyecto se centra en la implementación y personalización de gráficos utilizando la biblioteca **Matplotlib**, el estándar de facto en Python para la creación de gráficos estáticos.
 
 La aplicación genera dos tipos de gráficos comunes en el análisis de ventas:
 
