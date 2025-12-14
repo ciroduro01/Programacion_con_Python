@@ -51,7 +51,7 @@ class DBManager:
         try:
             cursor = self.conn.cursor()
             cursor.execute(sql_insert, (descripcion,)) 
-            self.conn.commit() # ¡Crucial para guardar los cambios!
+            self.conn.commit() # Utilizamos esto para guardar los cambios
             print(f"Tarea '{descripcion}' añadida con éxito.")
             return cursor.lastrowid
         except Error as e:
