@@ -49,12 +49,12 @@ Programacion_con_Python/
     ├── manage.py                   <-- Script de administración (esencial)
     ├── requirements.txt            <-- Dependencias de Python
     ├── .gitignore                  <-- Archivo para ignorar db.sqlite3, venv, etc.
-    ├── blog_principal/             <-- Directorio del PROYECTO
+    ├── blog_principal/             <-- Directorio del proyecto
     │   ├── settings.py             <-- Configuración global
     │   ├── urls.py                 <-- Mapeo de rutas raíz
     │   ├── wsgi.py / asgi.py       <-- Archivos de despliegue
     │   └── __init__.py
-    └── posts/                      <-- Directorio de la APLICACIÓN 'posts'
+    └── posts/                      <-- Directorio de la aplicación 'posts'
         ├── models.py               <-- Definición de la tabla Post
         ├── views.py                <-- Lógica (funciones home, detalle)
         ├── urls.py                 <-- Mapeo de rutas específicas de la app
@@ -68,10 +68,11 @@ Programacion_con_Python/
                 └── detail.html     <-- Muestra un solo post
 ```
 
+**Notas adicionales**
 | Archivo/Carpeta | Función | Nota Importante |
 | :--- | :--- | :--- |
 | **`db.sqlite3`** | Archivo de Base de Datos. | **IGNORADO por Git** (archivo de datos binario). |
-| `migrations/` | Historial de las tablas. | para que otros puedan replicar la estructura de la base de datos. |
+| `migrations/` | Historial de las tablas. | Para que otros puedan replicar la estructura de la base de datos. |
 
 -----
 
