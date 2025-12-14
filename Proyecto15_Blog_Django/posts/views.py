@@ -2,7 +2,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Post
 
-# Vista para LISTAR todos los posts
+# Vista para listar todos los posts
 def post_list(request):
     # Obtiene todos los objetos Post de la base de datos
     # Los ordena por fecha de publicación (más nuevo primero)
