@@ -1,7 +1,0 @@
-ID_Venta,Producto,Cantidad,Monto_Unitario,Monto_Total,Fecha,Sucursal
-101,Mouse Inalámbrico,5,15.5,77.5,2025-06-01,A
-102,Teclado Mecánico,2,75.0,150.0,2025-06-03,A
-103,Monitor Curvo,1,180.99,180.99,2025-06-05,A
-201,Mouse Inalámbrico,10,14.99,149.9,2025-06-02,B
-202,Webcam HD,4,35.0,140.0,2025-06-04,B
-301,Mouse Pad XXL,8,12.0,96.0,2025-07-01,C
