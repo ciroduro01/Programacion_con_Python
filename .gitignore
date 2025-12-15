@@ -3,7 +3,6 @@
 # ===============================================
 
 # 1. ENTORNO VIRTUAL
-# Es lo más importante a ignorar.
 venv/
 .venv/
 env/
@@ -16,23 +15,26 @@ __pycache__/
 *.pyd
 *.so
 
-# 3. BASES DE DATOS Y PERSISTENCIA (Proyectos SQL, Flask, Django)
-# Bases de datos SQLite y archivos de persistencia JSON/pickle.
+# 3. BASES DE DATOS Y PERSISTENCIA GENERADA (OUTPUT)
+# Bases de datos SQLite (P6, P9, P13, P15)
 *.sqlite3
 *.db
-*.json 
+
+# Archivos de persistencia JSON de SALIDA (OUTPUT)
+# Ignora el JSON de la librería (P2)
+Proyecto02_Gestor_Libreria/libreria.json 
+
+# Archivo de salida consolidado (P10)
+reporte_consolidado.csv
 
 # 4. ARCHIVOS GENERADOS POR FRAMEWORKS WEB (Django, Flask)
-# Django: Ignora la base de datos, carpetas estáticas/media y migraciones temporales.
 /media/
 /static/
-*/migrations/  # Ignora las carpetas 'migrations' dentro de cualquier app
+
+# Django: Mantener el historial de migraciones. Ignoramos la carpeta de caché de Flask.
+instance/
 
 # 5. ARCHIVOS DE CONFIGURACIÓN Y SECRETOS (Claves API)
-# ¡Importante para proyectos con APIs!
+# ¡Importante para proyectos con APIs! (P7, P14)
 config.py
 *.env
-
-# 6. ARCHIVOS DE ANALISIS DE DATOS
-# Archivos de salida grandes o que no son código fuente.
-reporte_consolidado.csv
