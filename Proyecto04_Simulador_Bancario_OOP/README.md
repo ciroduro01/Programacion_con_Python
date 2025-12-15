@@ -75,3 +75,77 @@ Este proyecto demuestra un dominio funcional de:
   * **Lógica de Negocio:** Implementación de reglas transaccionales clave (ej. verificación de saldo insuficiente).
 
 -----
+
+# Project N°4: Bank Account Simulator (Object-Oriented Programming (OOP) Fundamentals)
+
+## 1. Objective and Summary
+
+The main objective of this project is to simulate a basic banking system for clients, demonstrating the fundamental principles of Object-Oriented Programming (OOP) in Python, specifically: Classes, Objects, Encapsulation, and Composition.
+
+The application allows the creation of clients and accounts, and the execution of basic transactional operations (deposit, withdrawal, and balance inquiry) through a command-line interface (CLI).
+
+**Key Value**: Implementation of data integrity (preventing withdrawals with insufficient funds) using controlled class methods.
+
+---
+
+## 2. Technologies and Tools Used
+
+This project focuses on implementing the programming paradigm, using the native features of the Python language.
+
+* **Language**: Python 3.x
+* **Paradigm**: Object-Oriented Programming (OOP)
+* **Core Concepts**:
+* **Encapsulation**: Use of private attributes (e.g., `__saldo`) in the `CuentaBancaria` class.
+* **Composition**: The `Cliente` class "has" a `CuentaBancaria` object.
+* **Classes and Objects**: Definition of `CuentaBancaria` and `Cliente`.
+
+---
+
+## 3. Key Results
+
+The program provides an interactive menu interface that allows for robust and secure account management.
+
+### Transactional Integrity
+
+The key result is the successful application of business logic in the methods, guaranteeing data consistency:
+
+* **Withdrawal Restriction**: The `retirar(monto)` method checks the balance before performing any operation. If `saldo < monto`, the transaction is rejected, preventing the balance from becoming negative.
+* **Access Control**: The account balance cannot be modified directly from outside the class, but only through the `depositar` and `retirar` methods, thus ensuring encapsulation.
+
+---
+
+## 4. Project Development (Procedure)
+
+The project design is based on two main classes with well-defined responsibilities:
+
+1. `CuentaBancaria` Class:
+* Exclusively responsible for financial logic (deposits, withdrawals) and the account balance (`__saldo`).
+* The balance is marked as private (`__saldo`) to force interaction through the class's methods, thus adhering to encapsulation.
+2. `Cliente` Class:
+* Responsible for the user's identity (`id_cliente`, `nombre`).
+* It uses composition when initializing a `CuentaBancaria` object within itself (`self.cuenta`).
+3. **Global Structure**: A global dictionary (`BASE_CLIENTES`) is used to store instances of `Cliente` objects, indexed by their ID, simulating the in-memory customer database.
+
+---
+
+## 5. Repository and File Structure
+
+The project is contained in a single code file, which facilitates its execution.
+
+```bash
+Programacion_con_Python/
+└── Proyecto04_Simulador_Bancario_OOP/
+    ├── banco_manager.py       # Contains the Client, BankAccount classes and the menu logic.
+    └── README.md     # Project documentation.
+```
+
+---
+
+## 6. Conclusions
+
+This project demonstrates a functional mastery of:
+
+* **Class Design**: Ability to model real-world entities (Client, *Cliente*, Account, *Cuenta*) as Python classes.
+* **Encapsulation**: Rigorous control over the internal attributes (balance, *saldo*) of a class to protect data integrity.
+* **Object Composition**: Use of one class within another to delegate responsibilities (the client delegates balance management to the account).
+* **Business Logic**: Implementation of key transactional rules (e.g., insufficient balance check).
