@@ -91,6 +91,7 @@ source venv/bin/activate
 3. **Instalar Dependencias**
 
 Cada proyecto web o de análisis (P7, P9, P11, P12, P13, P15) requiere librerías de terceros (ej. `requests`, `SQLAlchemy`, `Flask`, `Django`, `Matplotlib`).
+
 **Instrucción:** Navega a la carpeta del proyecto que deseas ejecutar (ej. `Proyecto13_API_REST_Flask`) y consulta el `README.md` específico para la lista de dependencias que debes instalar manualmente vía `pip install`.
 
 4. **Ejecutar el Proyecto**
