@@ -67,7 +67,7 @@ Programacion_con_Python/
     │   ├── sucursal_a_jun.csv  # Datos de entrada 1
     │   ├── sucursal_b_jun.csv  # Datos de entrada 2
     │   └── sucursal_c_jul.csv  # Datos de entrada 3
-    ├── reporte_consolidado.csv # (Generado) Archivo de salida final.
+    ├── reporte_consolidado.csv # (Generado) IGNORADO - Archivo de salida final.
     └── README.md               # Documentación del proyecto.
 ```
 
@@ -83,3 +83,84 @@ Este proyecto demuestra un dominio avanzado de:
   * **Programación Robusta:** Implementación de bloques de control de errores (`try/except`) para asegurar que el *pipeline* no falle ante datos sucios o mal formados.
 
 -----
+
+# Project N°10: CSV Report Consolidation and Cleaning (Data Pipeline Automation and Tabular Data Transformation)
+
+## 1. Objective and Summary
+
+The main objective of this project is to automate the process of reading, cleaning, transforming, and consolidating multiple tabular data files (CSV) into a single final report.
+
+The application demonstrates the creation of a data pipeline that:
+
+1. Automatically searches for all sales reports in the source folder.
+2. Processes each transaction, ensuring that the numeric fields are valid.
+3. Adds a calculated column (`Monto_Total` or *Total_Amount*).
+4. Consolidates all the information into a single output file.
+
+**Core Concept**: Professional CSV File I/O Management and Data Integrity Assurance.
+
+---
+
+## 2. Technologies and Tools Used
+
+This project focuses on standard Python modules for file handling and operating system integration.
+
+* **Language**: Python 3.x
+* **File Module**: CSV (Using `DictReader` and `DictWriter` for structured data handling).
+* **System Module**:
+* `glob`: To automatically search for all CSV files within a directory.
+* `os`: For file path management.
+* **Core Technique**: Data Type Cleaning and Conversion (casting from `str` to `float/int`) with `try/except` error handling.
+
+---
+
+## 3. Key Results
+
+The final result is the `reporte_consolidado.csv` file, which combines all individual transactions and contains a calculated key metric.
+
+### Data Transformation
+The script performs a critical Data Transformation (T in ETL):
+
+* **Derived Calculation**: For each row read, the Total_Amount (`Monto_Total`) column is calculated and added using the formula: Total_Amount = Quantity * Unit_Amount (`Monto_Total = Cantidad * Monto_Unitario`).
+* **Homogenization**: All reports with different file names and time periods are unified under a common header structure.
+* **Error Handling**: Rows with formatting errors (e.g., text where a number should be) are identified and skipped, allowing the process to continue without failure.
+
+---
+
+## 4. Project Development (Procedure)
+The script follows a linear and robust workflow:
+
+1. **Automatic Discovery**: `glob.glob()` is used to dynamically find all `.csv` files in the sales_reports (`reportes_ventas`) folder, eliminating the need to list each file manually.
+2. **Dictionary Reading (`DictReader`)**: Each file is opened, and `csv.DictReader` allows the rows to be processed as dictionaries, making the code more readable by accessing data by column name (e.g., `row['Quantity']` or `fila['Cantidad']`) instead of by index.
+3. **Conversion and Calculation**: Within the processing loop, `Quantity` (or `Cantidad`) and `Unit_Price` (or `Monto_Unitario`) are converted to numeric types. If the conversion is successful, the Total_Amount (`Monto_Total`) is calculated. If it fails (e.g., `ValueError`), the `try/except` block prints a warning and skips the row.
+4- **Final Writing (DictWriter)**: Once all the data has been collected and cleaned into a list, the `csv.DictWriter` writes the content to the output file, ensuring that the column order (OUTPUT_COLUMNS or `COLUMNAS_SALIDA`) is as desired.
+
+---
+
+## 5. Repository and File Structure
+
+The project is organized into an input folder and a main output file:
+
+```bash
+Programacion_con_Python/
+└── Proyecto10_Consolidador_CSV/
+
+    ├── consolidador_csv.py  # Main logic of the data pipeline.
+    ├── reportes_ventas/
+    │   ├── sucursal_a_jun.csv# Input data 1
+    │   ├── sucursal_b_jun.csv # Input data 2
+    │   └── sucursal_c_jul.csv   # Input data 3
+    ├── reporte_consolidado.csv # (Generated) IGNORED - Final output file.
+    └── README.md             # Project documentation.
+```
+
+---
+
+## 6. Conclusions
+
+This project demonstrates an advanced mastery of:
+
+* **Data Pipelines**: The ability to build an automated process from data ingestion to data export.
+* **CSV File Handling**: Efficient use of CSV tools (DictReader/DictWriter) for structured work with tabular data.
+* **Data Transformation**: Ability to generate new metrics (Total_Amount or *Monto_Total*) from raw data.
+* **Robust Programming**: Implementation of error-handling blocks (try/except) to ensure the pipeline does not fail due to corrupted or malformed data.
