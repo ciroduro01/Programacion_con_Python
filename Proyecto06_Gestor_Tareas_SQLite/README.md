@@ -60,7 +60,7 @@ El proyecto utiliza un archivo de código y genera el archivo de la base de dato
 Programacion_con_Python/
 └── Proyecto06_Gestor_Tareas_SQLite/
     ├── gestor_tareas_db.py # Lógica de la DB y la interfaz de usuario.
-    ├── tareas.db           # (Generado automáticamente) El archivo binario de la base de datos.
+    ├── tareas.db           # (Generado automáticamente) IGNORADO - El archivo binario de la base de datos.
     └── README.md           # Documentación del proyecto.
 ```
 
@@ -76,3 +76,78 @@ Este proyecto valida la habilidad de:
   * **Seguridad y Robustez:** Aplicación de **parámetros seguros** en las consultas para mitigar riesgos y manejo de excepciones.
 
 -----
+
+# Project N°6: Task Management System (CRUD Application with SQLite Database)
+
+## 1. Objective and Summary
+
+The objective of this project is to build a functional console application that implements the four fundamental data management operations, known as CRUD (Create, Read, Update, Delete), using the Python `sqlite3` library.
+
+The application allows a user to create, view, mark as completed, and delete tasks, ensuring that all data is securely persisted in a database file (`tareas.db`) even after the program is closed.
+
+**Key Concept**: To demonstrate the handling of a local relational database and the execution of SQL statements using Python.
+
+---
+
+## 2. Technologies and Tools Used
+
+This project is based on the direct integration of Python with its standard database module.
+
+* **Language**: Python 3.x
+* **Database**: SQLite (Embedded database, no external server required). 
+* **Python Module**: `sqlite3` (Standard module for interacting with SQL-compatible databases).
+* **Core Technique**: SQL (CREATE TABLE, INSERT, SELECT, UPDATE, and DELETE statements).
+* **Software Design**: Object-Oriented Programming (OOP). The `DBManager` class encapsulates the connection and all SQL operations.
+
+---
+
+## 3. Key Results
+
+The system offers a simple yet robust console menu that allows the following task management operations:
+
+| Operation | Python Method | Related SQL Statement | Description |
+| :--- | :--- | :--- | :--- |
+| **C**reate (Crear) | `agregar_tarea(desc)` | `INSERT INTO...` | Allows adding a new task to the table. |
+| **R**ead (Leer) | `obtener_todas_las_tareas()` | `SELECT * FROM...` | Retrieves and displays the complete list of tasks.
+| **U**pdate (Actualizar) | `marcar_como_completada(id)` | `UPDATE... SET...` | Modifies the task status (from 0 to 1). |
+| **D**elete (Eliminar) | `eliminar_tarea(id)` | `DELETE FROM...` | Permanently removes a task. |
+
+* **Persistence**: The database connection (`sqlite3.connect('tareas.db')`) ensures that added tasks are saved to the local file and available when the program is run again.
+* **Transaction Management**: Using `self.conn.commit()` after each modification ensures that changes are safely written to disk.
+
+---
+
+## 4. Project Development (Procedure)
+
+The program logic is divided into a class for database management and a main function for the user interface.
+
+1. **Connection and Setup**: The `DBManager` class initializes the connection and calls `crear_tabla()`. The `crear_tabla()` function executes a `CREATE TABLE IF NOT EXISTS` statement to ensure the data structure is ready.
+2. **SQL Abstraction**: Each method of the `DBManager` class (e.g., `agregar_tarea`, `eliminar_tarea`) is responsible for constructing and executing its corresponding SQL statement, using safe parameters (`?` and tuples) to prevent SQL injection.
+3. **User Interface**: The `main()` function presents a looping menu (`while True`) in the console.
+4. **Data Management**: User logic processes the selected option and requests the necessary data (description or ID), validates it (`try/except` for IDs), and calls the appropriate `DBManager` method.
+5. **Safe Closure**: The magic method `__del__` in the `DBManager` class ensures that the connection (`self.conn.close()`) is closed when the object instance is destroyed, releasing the database file.
+
+---
+
+## 5. Repository and File Structure
+
+The project uses a code file and automatically generates the database file.
+
+```bash
+Programacion_con_Python/
+└── Proyecto06_Gestor_Tareas_SQLite/
+    ├── gestor_tareas_db.py # Database logic and user interface.
+    ├── tareas.db   # (Automatically generated) IGNORED - The binary database file.
+    └── README.md    # Project documentation.
+```
+
+---
+
+## 6. Conclusions
+
+This project validates the ability to:
+
+* **Data Persistence**: Successful implementation of a system that maintains information between execution sessions.
+* **SQL Knowledge**: Mastery of CRUD statements for interacting with a relational database.
+* **Software Architecture**: Appropriate use of classes and encapsulation (OOP) to separate business logic (user interface) from data access logic (DBManager).
+* **Security and Robustness**: Application of secure parameters in queries to mitigate risks and handle exceptions.
