@@ -88,3 +88,90 @@ Este proyecto demuestra un entendimiento sólido de:
   * **Manejo de Excepciones:** Robustez ante errores comunes del sistema operativo.
 
 -----
+
+# Project N°5: Directory Tree Explorer (Practical Application of the Recursion Concept)
+
+## 1. Objective and Summary
+
+The main objective of this project is to implement a Directory Tree Explorer to demonstrate the practical and efficient application of the Recursion concept.
+
+The application takes a directory path (for example, `.` for the current folder) and traverses it in depth, calculating the total disk space occupied and generating a report with the 5 largest files found.
+
+**Key Value**: To demonstrate how recursion simplifies traversing hierarchical or nested structures (such as a file system).
+
+---
+
+## 2. Technologies and Tools Used
+
+This project uses native Python modules specifically designed to interact with the operating system.
+
+* **Language**: Python 3.x
+* **System Modules**:
+* **`os`**: Essential for interacting with the operating system (listing directories, verifying if it is a file/directory, obtaining size).
+* **`sys`**: For handling command-line arguments.
+* **Core Technique**: Recursion (the `recorrer_directorio` function calls itself).
+* **Utilities**: Formatting function (`formatear_bytes`) to display the size in readable units (KB, MB, GB).
+
+---
+
+## 3. Key Results
+
+The program concludes with a summary report that consolidates the analysis metrics and presents the information in a readable format.
+
+### Sample Report (English Translation)
+
+```bash
+====================================================
+SCAN RESULTS
+Total files found: 1250
+Total size: 3.54 GB
+==================================================
+
+Top 5 Largest Files:
+- 1.25 GB: /path/to/video_final.mp4
+- 850.50 MB: /path/to/data/backup.zip
+- 200.12 MB: /path/to/installer.exe
+- 150.00 MB: /path/to/document/temp.pdf
+- 100.00 MB: /path/to/another/file.log
+--------------------------------------------------
+```
+
+* **Base Case Handling**: Recursion ends when a file is found (its size is calculated) or when an empty folder is found.
+* **Error Handling**: Includes `try/except` blocks to handle files or directories to which the user does not have access permissions (`PermissionError` exception).
+
+---
+
+## 4. Project Development (Procedure)
+
+The core of the project resides in the `recorrer_directorio` function, which applies recursive logic:
+
+1. **Base Case (File)**: If the current path is a file, its size is obtained, added to a global list, and its size is returned.
+2. **Recursive Step (Directory)**: If the path is a directory:
+* `os.listdir()` is used to obtain a list of all internal elements.
+* For each element, the `recorrer_directorio` function is called recursively, and the return value (the size of the subtree) is added to the total size of the parent directory.
+3. **OS Error Handling**: `PermissionError` exception handling is implemented to prevent the program from crashing when attempting to access restricted system directories.
+4. **Post-Processing**: Once recursion finishes, the `mostrar_resultados` function uses the global list (`archivos_encontrados`) to calculate the total size and find the largest files by sorting them.
+
+---
+
+## 5. Repository and File Structure
+
+The project is contained in a single executable code file.
+
+```bash
+Programacion_con_Python/
+└── Proyecto05_Explorador_Recursivo/
+    ├── explorador_recursivo.py  # Implementation of the recursive function.
+    └── README.md   # Project documentation.
+```
+
+---
+
+## 6. Conclusions
+
+This project demonstrates a solid understanding of:
+
+* **Recursion**: The ability to define a function that calls itself to solve a self-similar problem.
+* **System Modules**: Practical use of the `os` library for interacting with the file system.
+* **Handling Hierarchical Structures**: An elegant solution to the problem of traversing deep, nested data structures (such as a directory tree).
+* **Exception Handling**: Robustness against common operating system errors.
