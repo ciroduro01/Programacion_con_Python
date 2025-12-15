@@ -79,3 +79,80 @@ Este proyecto demuestra un dominio de:
   * **Consideraciones Éticas y de Robustez:** Uso de *User-Agents* y manejo de errores para una interacción respetuosa y estable con el servidor web.
 
 -----
+
+# Project N°12: Book Catalog Web Scraper (Web Data Extraction with Requests and BeautifulSoup)
+
+## 1. Objective and Summary
+
+The main objective of this project is to implement a functional web scraper to extract structured data from a public web page.
+
+The program is designed to access a book catalog page, simulate a browser (using `requests`), and then parse the HTML and CSS code (using `BeautifulSoup`) to obtain the title, price, and rating of each book. This demonstrates the ability to obtain data from web sources that do not directly offer an API.
+
+**Core Concepts**: HTTP requests, HTML parsing, and the use of CSS selectors for data extraction.
+
+---
+
+## 2. Technologies and Tools Used
+
+This project is based on the integration of Python with specific libraries for web interaction and analysis.
+
+* **Language**: Python 3.x
+* **HTTP Requests**: `requests` (To send the GET request and receive the response).
+* **HTML Analysis (Parser)**: `BeautifulSoup` (For navigating, searching, and extracting elements from the DOM tree).
+* **Localization Technique**: Use of CSS selectors (e.g., `select()`) to accurately identify the HTML elements containing the desired information (titles, prices).
+
+---
+
+## 3. Key Results
+
+The fundamental result is the ability to convert unstructured data (HTML) into structured data (a list of Python dictionaries).
+
+### Extraction Robustness
+
+The scraper demonstrates good extraction practices:
+
+* **HTTP Error Handling**: Uses `respuesta.raise_for_status()` to detect and handle common error codes (`403`, `404`, `500`), preventing silent failures.
+* **HTTP Headers**: Includes a custom `User-Agent`, which is essential to avoid being blocked by some websites.
+* **Missing Data Handling**: Includes `try/except` blocks or conditional logic to handle cases where an element (such as the rating) might be missing or malformed in a book card, allowing the scraper to continue.
+
+---
+
+## 4. Project Development (Procedure)
+
+The workflow is divided into two main phases, encapsulated in modular functions:
+
+1. **Content Retrieval (`obtener_html`)**:
+
+* The destination URL and headers are configured.
+* The `requests.get()` function is called.
+* The plain HTML text (`respuesta.text`) is returned.
+
+2. **Data Extraction (`extraer_datos_pagina`)**:
+* `BeautifulSoup` is initialized to build the DOM tree.
+* The CSS selector (`.product_pod`) is used to identify each book card.
+* Within each card, more specific selectors are used to retrieve the title (`a` tag), the price (`.price_color`), and the rating class (`.star-rating`).
+* The result is formatted as a Python dictionary.
+
+---
+
+## 5. Repository and File Structure
+
+The project is contained in a single executable code file.
+
+```bash
+Programacion_con_Python/
+└── Proyecto12_Web_Scraper/
+    ├── scraper_libros.py # Request logic and parsing.
+    └── README.md # Project documentation.
+```
+
+---
+
+## 6. Conclusions
+
+This project demonstrates mastery of:
+
+* **Web Connectivity**: Ability to make HTTP requests to external servers.
+* **HTML Processing**: Mastery of the *BeautifulSoup* library for parsing and navigating the DOM (Document Object Model).
+* **Structured Extraction**: Ability to use CSS selectors to extract information efficiently and specifically.
+* **Ethical and Robustness Considerations**: Use of *User-Agents* and error handling for respectful and stable interaction with the web server.
