@@ -79,3 +79,81 @@ Este proyecto demuestra un dominio de:
   * **Recursividad:** Uso de la recursividad para la división de la lista.
 
 -----
+
+# Project N°8: Merge Sort Analysis (Demonstration and Comparison of O(N log N) Algorithms)
+
+## 1. Objective and Summary
+
+The main objective of this project is to implement and demonstrate the **Merge Sort** sorting algorithm and perform a direct performance comparison against a quadratic algorithm, such as **Bubble Sort**.
+
+The project generates increasingly large datasets (up to N=20,000) and times the execution time of both. This serves to empirically verify the significant difference in efficiency between the complexities of O(N log N) (Merge Sort) and O(N^2) (Bubble Sort) as the dataset grows larger.
+
+**Central Concept**: Implementation of the "Divide and Conquer" pattern and asymptotic complexity analysis.
+
+---
+
+## 2. Technologies and Tools Used
+
+This project focuses on the implementation of the algorithm and the standard module for time measurement.
+
+* **Language**: Python 3.x
+* **Time Module**: `time.perf_counter()` (For high-precision measurements).
+* **Implemented Algorithms**:
+* `merge_sort` (Divide and Conquer: O(N log N))
+* `bubble_sort` (For comparison purposes only: O(N^2))
+* **Core Technique**: Recursion for the division phase of Merge Sort.
+
+---
+
+## 3. Key Results
+
+The program's fundamental result is a table showing the dramatic difference in execution times, especially with large list sizes N.
+
+### Performance Table
+
+| Size (N) | Merge Sort (O(N log N)) | Bubble Sort (O(N^2)) |
+| :--- | :--- | :--- |
+| 1,000 | ~ 0.005 s | ~ 0.200 s |
+| 5,000 | ~ 0.025 s | ~ 4.500 s |
+| 20,000 | ~ 0.120 s | VERY SLOW |
+
+* **Asymptotic Conclusion**: While the Merge Sort time increases linearly with N, the Bubble Sort time increases exponentially (quadratically). With N=20,000, the Bubble Sort is so slow that the code chooses not to execute it, highlighting its inefficiency.
+
+---
+
+## 4. Project Development (Procedure)
+
+The Merge Sort is implemented using two functions:
+
+1. **`merge_sort(lista)` (Divide)**: This is the recursive function. If the list is greater than 1, it splits it into two halves (left and right) and calls itself recursively to sort those halves.
+2. **`merge(izquierda, derecha)` (Conquer)**: This helper function efficiently (O(N)) combines two already sorted lists into a single sorted list.
+
+**The Comparison Process**:
+
+1. A list of test sizes (`tamanos`) is defined.
+2. Inside the test loop, a copy of the original random list (`datos[:]`) is created for each algorithm, ensuring that both work on identical, unsorted data.
+3. The `cronometrar` function wraps the execution to capture the time.
+
+---
+
+## 5. Repository and File Structure
+
+The project is contained in a single executable code file.
+
+```bash
+Programacion_con_Python/
+└── Proyecto08_Analisis_Merge_Sort/
+    ├── analisis_merge_sort.py  # Implementation of the algorithms and benchmarking logic.
+    └── README.md               # Project documentation.
+```
+
+---
+
+## 6. Conclusions
+
+This project demonstrates mastery of:
+
+* **Advanced Sorting Algorithms**: Functional implementation of the complex Merge Sort algorithm.
+* **Divide and Conquer**: Successful application of this algorithmic design pattern.
+* **Complexity Analysis**: Ability to use timing modules to empirically measure the theoretical efficiency of O(N log N) versus O(N^2).
+* **Recursion**: Use of recursion for list division.
