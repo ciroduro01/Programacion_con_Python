@@ -71,4 +71,3 @@ cd Programacion_con_Python
 Este proyecto está bajo la Licencia MIT. Para detalles completos, consulte el archivo [**LICENSE**](LICENSE).
 
 ---
-```
