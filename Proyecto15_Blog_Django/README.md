@@ -43,7 +43,7 @@ La siguiente imagen ilustra las tres entradas del blog creadas con Django. Como 
 * ***De Monolito a Microservicio: Creando un CRUD con Flask y SQLAlchemy***
 * ***Analizando la Eficiencia: ¿Por qué O(N log N) es Mejor que O(N^2)?***
 
-![Entradas principales del Blog](Proyecto15_Blog_Django/django_blog.png)
+![Entradas principales del Blog](./django_blog.png)
 
 -----
 
