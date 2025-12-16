@@ -57,3 +57,61 @@ Este proyecto demuestra un dominio avanzado de:
 * **Seguridad y Mejores Prácticas:** Implementación de la separación de secretos (credenciales) del código fuente, una práctica obligatoria en el desarrollo profesional.
 
 ---
+
+# Project N°14: Sending Automatic Reports via Email (Automating Notifications with smtplib)
+
+## 1. Objective and Overview
+
+The objective of this project is to implement an automation routine that sends predefined reports, notifications, or status messages via email.
+
+The project demonstrates Python's ability to interact with internet protocols, specifically the **SMTP** (Simple Mail Transfer Protocol), using the `smtplib` standard library. This is essential for tasks such as sending daily reports, server error alerts, or user confirmations.
+
+**Core Concepts**: Automation, SMTP Protocol, TLS/SSL Encryption (for secure transmission), MIME Multipart (for HTML-formatted emails).
+
+---
+
+## 2. Technologies and Tools Used
+
+This project is based entirely on built-in Python libraries, making it very lightweight and portable.
+
+* **Language**: Python 3.x
+* **SMTP Library**: `smtplib` (For connecting to, authenticating with, and sending to the mail server).
+* **Email Library**: `email.mime` (To construct the email with headers, subject, and body in HTML/plain format).
+* **Security**: `ssl` (Ensures that communication through port 587 is encrypted using TLS).
+* **Best Practice**: Use an external `config.py` file to manage sensitive credentials.
+
+---
+
+## 3. Project Development (Structure and Components)
+
+The script is divided into three clear logical components:
+
+1. **Secure Configuration**: Email credentials (`REMITENTE_EMAIL`, `REMITENTE_PASSWORD`) and SMTP server details are stored in the `config.py` file.
+2. **Message Construction (`crear_mensaje`)**: Uses the `MIMEMultipart` class and HTML content to construct a professional, formatted email, not just plain text. This improves the report's presentation.
+3. **Sending Logic (`enviar_email`)**:
+* Establishes a secure connection with `smtplib.SMTP` and `server.starttls()`.
+* Perform authentication using `server.login()` with the `config` variables.
+* Send the message and handle crucial authentication errors for process robustness.
+
+---
+
+## 4. Repository and File Structure
+
+```bash
+Programacion_con_Python/
+└── Proyecto14_Reporte_Email_Automatico/
+    ├── reporte_automatico_email.py # Main Logic (Sending)
+    ├── config.py             # SMTP Credentials (IGNORED)
+    └── README.md             # Project Documentation
+```
+
+---
+
+## 5. Conclusions
+
+This project demonstrates advanced mastery of:
+
+* **Task Automation**: Ability to integrate communication services (email) into Python workflows.
+* **Network Protocols**: Understanding and correct use of the SMTP protocol with TLS/SSL encryption.
+* **Content Management**: Ability to construct complex messages using HTML formatting for a professional presentation.
+* **Security and Best Practices**: Implementation of source code separation of secrets (*credentials*), a mandatory practice in professional development.
