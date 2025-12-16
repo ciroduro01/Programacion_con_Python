@@ -56,6 +56,73 @@ Este portafolio de 15 proyectos demuestra un dominio integral del desarrollo en 
 
 ---
 
+## 5. Salidas y Visualizaciones de Ejemplo
+Para ejemplificar nuestro portafolio de proyectos, comenzamos con la salida (*output*) del código del **Proyecto N°12 (Web Scraping de un Catálogo de Libros)**. Podemos ver que, en la salida, se han encontrado 20 libros en la página 1, junto con un fragmento de su título, su precio y su rating.
+
+```text
+Proyecto N°12: Web Scraper de Libros (requests + BeautifulSoup)
+
+ Extracción exitosa. Encontrados 20 libros en la página 1.
+
+--- EJEMPLO DE RESULTADO ---
+1. Título: A Light in the Attic...
+   Precio: $51.77 | Rating: Three
+2. Título: Tipping the Velvet...
+   Precio: $53.74 | Rating: One
+3. Título: Soumission...
+   Precio: $50.10 | Rating: One
+4. Título: Sharp Objects...
+   Precio: $47.82 | Rating: Four
+5. Título: Sapiens: A Brief History of Humankind...
+   Precio: $54.23 | Rating: Five
+---------------------------
+```
+
+A continuación, veremos el reporte del clima (en formato JSON) que ha salido como resultado de nuestro **Proyecto N°7 (Analizador del Clima con API)**. Podemos ver cómo son las condiciones climáticas en 4 ciudades del mundo (Buenos Aires, Tokio, Londres y Rio de Janeiro).
+
+```json
+[
+    {
+        "Ciudad": "Buenos Aires",
+        "Temperatura_C": 30.7,
+        "Sensacion_Termica_C": 31.95,
+        "Humedad_Porcentaje": 49,
+        "Viento_Velocidad_m/s": 3.09,
+        "Descripcion_Clima": "Muy nuboso"
+    },
+    {
+        "Ciudad": "Tokio",
+        "Temperatura_C": 6.19,
+        "Sensacion_Termica_C": 4.25,
+        "Humedad_Porcentaje": 54,
+        "Viento_Velocidad_m/s": 2.57,
+        "Descripcion_Clima": "Cielo claro"
+    },
+    {
+        "Ciudad": "Londres",
+        "Temperatura_C": 10.73,
+        "Sensacion_Termica_C": 10.08,
+        "Humedad_Porcentaje": 85,
+        "Viento_Velocidad_m/s": 5.14,
+        "Descripcion_Clima": "Muy nuboso"
+    },
+    {
+        "Ciudad": "Rio de Janeiro",
+        "Temperatura_C": 28.46,
+        "Sensacion_Termica_C": 31.43,
+        "Humedad_Porcentaje": 69,
+        "Viento_Velocidad_m/s": 6.69,
+        "Descripcion_Clima": "Algo de nubes"
+    }
+]
+```
+
+Por último, esta es una imagen de las principales entradas del blog creado en nuestro último proyecto de este portafolio, el **Proyecto N°15 (Blog Profesional con Django)**.
+
+![Principales Entradas del Blog](Proyecto15_Blog_Django/django_blog.png)
+
+---
+
 ## Para utilizar este repositorio...
 
 Para ejecutar los proyectos en este repositorio, se recomienda utilizar un entorno virtual para gestionar las dependencias de manera aislada.
