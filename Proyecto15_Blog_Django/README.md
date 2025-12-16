@@ -41,7 +41,7 @@ El proyecto se centra en la aplicación **`posts`**, ilustrando el flujo **MVT**
 La siguiente imagen ilustra las tres entradas del blog creadas con Django. Como puede verse, los títulos de estas entradas son:
 * ***Automatización del Reporte Diario: De la Consolidación CSV al Envío con SMTP***
 * ***De Monolito a Microservicio: Creando un CRUD con Flask y SQLAlchemy***
-* ***Analizando la Eficiencia: ¿Por qué O(N log N) es Mejor que O(N^2)?***
+* ***Analizando la Eficiencia: ¿Por qué O(N log N) es Mejor que O(N<sup>2</sup>)?***
 
 ![Entradas principales del Blog](./django_blog.png)
 
@@ -59,6 +59,7 @@ Programacion_con_Python/
     ├── manage.py                   <-- Script de administración (esencial)
     ├── requirements.txt            <-- Dependencias de Python
     ├── .gitignore                  <-- Archivo para ignorar db.sqlite3, venv, etc.
+    ├── django_blog.png             <-- Entradas del Blog
     ├── blog_principal/             <-- Directorio del proyecto
     │   ├── settings.py             <-- Configuración global
     │   ├── urls.py                 <-- Mapeo de rutas raíz
@@ -132,8 +133,17 @@ The project focuses on the `posts` application, illustrating the MVT flow for ma
 3. **Templates (`list.html` and `detail.html`)**: The presentation layer that receives the data from the View and formats it in HTML for the user.
 
 ---
+## 4. Visualization of Blog Posts
+The following image illustrates the three blog posts created with Django. As you can see, the titles of these posts are:
+* ***Automatización del Reporte Diario: De la Consolidación CSV al Envío con SMTP***
+* ***De Monolito a Microservicio: Creando un CRUD con Flask y SQLAlchemy***
+* ***Analizando la Eficiencia: ¿Por qué O(N log N) es Mejor que O(N<sup>2</sup>)?***
 
-## 4. Repository and File Structure
+![Blog Entries](./django_blog.png)
+
+---
+
+## 5. Repository and File Structure
 
 The structure reflects a complete professional Django application, including all standard configuration files.
 
@@ -145,6 +155,7 @@ Programacion_con_Python/
     ├── manage.py       # Administration script (essential)
     ├── requirements.txt    # Python dependencies
     ├── .gitignore   # File to ignore db.sqlite3, venv, etc.
+    ├── django_blog.png #Blog Entries
     ├── blog_principal/   # Project directory
     │   ├── settings.py   # Global configuration
     │   ├── urls.py       # Root route mapping
@@ -173,7 +184,7 @@ Programacion_con_Python/
 
 ---
 
-## 5. Conclusions
+## 6. Conclusions
 
 This project demonstrates advanced mastery of:
 
