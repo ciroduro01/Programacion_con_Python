@@ -37,7 +37,17 @@ El proyecto se centra en la aplicación **`posts`**, ilustrando el flujo **MVT**
 
 -----
 
-## 4\. Estructura del Repositorio y Archivos
+## 4\. Visualización de las Entradas del Blog
+La siguiente imagen ilustra las tres entradas del blog creadas con Django. Como puede verse, los títulos de estas entradas son:
+* ***Automatización del Reporte Diario: De la Consolidación CSV al Envío con SMTP***
+* ***De Monolito a Microservicio: Creando un CRUD con Flask y SQLAlchemy***
+* ***Analizando la Eficiencia: ¿Por qué O(N log N) es Mejor que O(N^2)?***
+
+![Entradas principales del Blog](Proyecto15_Blog_Django/django_blog.png)
+
+-----
+
+## 5\. Estructura del Repositorio y Archivos
 
 La estructura refleja una aplicación Django profesional completa, incluyendo todos los archivos de configuración estándar.
 
@@ -76,7 +86,7 @@ Programacion_con_Python/
 
 -----
 
-## 5\. Conclusiones
+## 6\. Conclusiones
 
 Este proyecto demuestra un dominio avanzado de:
 
