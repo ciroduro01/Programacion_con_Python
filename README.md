@@ -1,4 +1,4 @@
-# Portafolio de Proyectos: "Programación con Python" 
+# Portafolio de Proyectos: "Programación con Python" (Español)
 
 ## Resumen Ejecutivo
 Este portafolio de 15 proyectos demuestra un dominio integral del desarrollo en Python, desde la eficiencia algorítmica y los fundamentos de la Programación Orientada a Objetos (OOP) hasta la construcción de aplicaciones **Full-Stack** y *pipelines* de datos automatizados. Cada proyecto está diseñado para construir un seguimiento de diversas herramientas de Python que culmina en el desarrollo de sistemas de producción, como una API RESTful con **Flask** y un blog profesional con el *framework* **Django**.
@@ -180,7 +180,7 @@ Eres libre de modificar, distribuir y usar el código para fines personales y co
 
 ---
 
-# "Programming with Python" Projects Portfolio
+# "Programming with Python" Projects Portfolio (English)
 
 ## Repository Overview
 This portfolio of 15 projects demonstrates a comprehensive mastery of Python development, from algorithmic efficiency and the fundamentals of Object-Oriented Programming (OOP) to building **full-stack applications** and automated data **pipelines**. Each project is designed to build a track record of various Python tools, culminating in the development of production systems, such as a RESTful API with **Flask** and a professional blog with the **Django** framework.
