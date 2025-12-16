@@ -123,7 +123,7 @@ Por último, esta es una imagen de las principales entradas del blog creado en n
 
 ---
 
-## Para utilizar este repositorio...
+## 6. Para utilizar este repositorio...
 
 Para ejecutar los proyectos en este repositorio, se recomienda utilizar un entorno virtual para gestionar las dependencias de manera aislada.
 
@@ -170,7 +170,7 @@ python nombre_del_script.py
 
 ---
 
-## Licencia
+## 7. Licencia
 
 Este proyecto está bajo la Licencia **MIT**.
 
@@ -238,7 +238,74 @@ This portfolio of 15 projects demonstrates a comprehensive mastery of Python dev
 
 ---
 
-## To use this repository...
+## 5. Example Outputs and Visualization
+To illustrate our project portfolio, we begin with the output of the code for **Project N°12 (Web Scraping of a Book Catalog)**. We can see that, in the output, 20 books were found on page 1, along with a fragment of their title, price, and rating.
+
+```text
+Proyecto N°12: Web Scraper de Libros (requests + BeautifulSoup)
+
+ Extracción exitosa. Encontrados 20 libros en la página 1.
+
+--- EJEMPLO DE RESULTADO ---
+1. Título: A Light in the Attic...
+   Precio: $51.77 | Rating: Three
+2. Título: Tipping the Velvet...
+   Precio: $53.74 | Rating: One
+3. Título: Soumission...
+   Precio: $50.10 | Rating: One
+4. Título: Sharp Objects...
+   Precio: $47.82 | Rating: Four
+5. Título: Sapiens: A Brief History of Humankind...
+   Precio: $54.23 | Rating: Five
+---------------------------
+```
+
+Next, we'll see the weather report (in JSON format) that resulted from our **Project N°7 (Climate Analyzer with API)**. We can see the weather conditions in 4 cities around the world (Buenos Aires, Tokyo, London, and Rio de Janeiro).
+
+```json
+[
+    {
+        "Ciudad": "Buenos Aires",
+        "Temperatura_C": 30.7,
+        "Sensacion_Termica_C": 31.95,
+        "Humedad_Porcentaje": 49,
+        "Viento_Velocidad_m/s": 3.09,
+        "Descripcion_Clima": "Muy nuboso"
+    },
+    {
+        "Ciudad": "Tokio",
+        "Temperatura_C": 6.19,
+        "Sensacion_Termica_C": 4.25,
+        "Humedad_Porcentaje": 54,
+        "Viento_Velocidad_m/s": 2.57,
+        "Descripcion_Clima": "Cielo claro"
+    },
+    {
+        "Ciudad": "Londres",
+        "Temperatura_C": 10.73,
+        "Sensacion_Termica_C": 10.08,
+        "Humedad_Porcentaje": 85,
+        "Viento_Velocidad_m/s": 5.14,
+        "Descripcion_Clima": "Muy nuboso"
+    },
+    {
+        "Ciudad": "Rio de Janeiro",
+        "Temperatura_C": 28.46,
+        "Sensacion_Termica_C": 31.43,
+        "Humedad_Porcentaje": 69,
+        "Viento_Velocidad_m/s": 6.69,
+        "Descripcion_Clima": "Algo de nubes"
+    }
+]
+```
+
+Finally, this is an image of the main blog entries created in our last project of this portfolio, **Project N°15 (Professional Blog with Django)**.
+
+![Blog Posts with Django](Proyecto15_Blog_Django/django_blog.png)
+
+---
+
+## 6. To use this repository...
 
 To run projects in this repository, it is recommended to use a virtual environment to manage dependencies in isolation.
 
@@ -284,7 +351,7 @@ python script_name.py
 
 ---
 
-## License
+## 7. License
 
 This project is licensed under the **MIT** License.
 
