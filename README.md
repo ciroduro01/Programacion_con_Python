@@ -1,4 +1,10 @@
 # Portafolio de Proyectos: "Programación con Python" (Español)
+![Languages](https://img.shields.io/github/languages/top/ciroduro01/Programacion_con_Python)
+![Commits](https://img.shields.io/github/commit-activity/m/ciroduro01/Programacion_con_Python)
+![Repo size](https://img.shields.io/github/repo-size/ciroduro01/Programacion_con_Python)
+![Last update](https://img.shields.io/github/last-commit/ciroduro01/Programacion_con_Python)
+![License](https://img.shields.io/github/license/ciroduro01/Programacion_con_Python)
+![Bilingual](https://img.shields.io/badge/Docs-Bilingual-green)
 
 ## Resumen Ejecutivo
 Este portafolio de 15 proyectos demuestra un dominio integral del desarrollo en Python, desde la eficiencia algorítmica y los fundamentos de la Programación Orientada a Objetos (OOP) hasta la construcción de aplicaciones **Full-Stack** y *pipelines* de datos automatizados. Cada proyecto está diseñado para construir un seguimiento de diversas herramientas de Python que culmina en el desarrollo de sistemas de producción, como una API RESTful con **Flask** y un blog profesional con el *framework* **Django**.
